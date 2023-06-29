@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <p id="demo"></p>
+
+    <!-- <button onclick="document.getElementById('demo').innerHTML=Date()"> The time is?</button> -->
+  
+    <!-- <button onclick="this.innerHTML=Date()"> The time is? </button> -->
+  
+    <!-- <button onclick="displayDate()"> The time is? </button> -->
+  <script>
+
+    // function displayDate(){
+    //     document.getElementById("demo").innerHTML= Date();
+    // }
+
+
+//  function myfunction(a,b){
+//      return a+b;
+// }
+// let result = myfunction(4,6);
+// document.getElementById("demo").innerHTML=result;
+
+
+// function toCelsius(f){
+//     return (5/9) * (f-32);
+// }
+// let result = toCelsius(77);
+// document.getElementById("demo").innerHTML=result;
+
+//------ create Object-----------
+
+// const car={
+//     type:"fiat",model:"1967",color:"red"
+// };
+// document.getElementById("demo").innerHTML= car.type;
+
+
+// ----------------- display value from object-------------------
+// const person = {
+//     firstName:"john",lastName:"wick",fullName:function(){
+//         return this.firstName+" "+this.lastName;
+//     }
+// };
+// document.getElementById("demo").innerHTML=person.fullName();
+
+// let text = "bbsfhfshfjlhljfhljdh";
+// document.getElementById("demo").innerHTML=text.length;
+
+
+
+// ************************task 1:---- emplty object created with new key word and how to add value in empty object*******************
+
+// var student ={};
+
+// student.name = "smit";
+// student.std = "12";
+// student.sub = "cs";
+// console.log(student);
+
+
+
+
+
+// *********************task 2 :---- how to add new value in existing object****************** 
+
+//                                    **************3ways:*****************
+
+//      ****** 1.use [] brakets  ex:obj['name']='smit'***********
+
+
+// var student={
+//     name:'smit',
+//     age:21,
+// }
+
+// student ['city'] = 'surat';
+
+// console.log(student);
+
+//   //   ****** 2.use dot. ex: obj.name='smit'**************
+
+// var student={
+//     name:'smit',
+//     age:21,
+// }
+
+// student.marks = 90;
+
+// console.log(student);
+
+//  // ****** 3.object.assign() method***********************
+
+// const book ={
+//     name:'english',
+//     price:250,
+// }
+//   book.publish = Object.assign({},book,{publishyear:2015});
+
+//console.log(book);
+
+// ********************* task : 3 ---how to remove values in existing object*******************
+
+// var student ={
+//     name:'smit',
+//     age:21,
+// }
+
+// console.log(delete student.name);
+// console.log(delete student.age);
+// console.log(student);
+
+
+// ************task:- 4 pattern*******************
+
+// let n = 5;
+// let string = "";
+// // Upside pyramid
+// for (let i = 1; i <= n; i++) {
+//   // printing spaces
+//   for (let j = n; j > i; j--) {
+//     string += " ";
+//   }
+//   // printing star
+//   for (let k = 0; k < i * 2 - 1; k++) {
+//     string += "*";
+//   }
+//   string += "\n";
+// }
+// // downside pyramid
+// for (let i = 1; i <= n - 1; i++) {
+//   for (let j = 0; j < i; j++) {
+//     string += " ";
+//   }
+//   for (let k = (n - i) * 2 - 1; k > 0; k--) {
+//     string += "*";
+//   }
+//   string += "\n";
+// }
+// console.log(string);
+
+//-------------------------------------------------------------------------------------------------------------------------------------------
+
+// task:- 1*************how to give space in Object*************
+
+// var sm = new Object();
+//   sm["smit meshiya"]="name";
+  
+//   console.log(sm);
+
+
+// task:- 2.*******object ni length*********************
+
+// var student={
+//   name:'smit',
+//   age:21,
+//   department:'MCA',
+// }
+
+// var size = Object.keys(student).length;
+// console.log(size);
+
+
+// task:- 3.*******objects in all loops*********************
+
+//  =======for loop=====
+
+// var student={
+//   name:'smit',
+//   age:21,
+//   department:'MCA',
+// }
+
+// for(var property in student){
+//   console.log(`${property}: ${student[property]}`);
+// }
+
+// for(var key in student){
+//   var value;
+//   value=student[key];
+//   console.log(key+":"+value);
+// }
+
+// for(var [key,value] of Object.entries (student)){
+//       console.log(key+":"+value);
+// }
+
+// task:- 4.*******objects get methods*********************
+
+// var criketer={
+//       name:'Ms dhoni',
+//       best_score: 210,
+//       country:'India',
+// }
+// *******************dot method***********
+// console.log(criketer.name);
+// console.log(criketer.best_score);
+// console.log(criketer.country );
+
+// ******************[] method**************
+
+// console.log(criketer['name']);
+// console.log(criketer['best_score']);
+// console.log(criketer['country']);
+
+// ***********object destructing method*****
+
+// const{name}=criketer;
+// const{best_score}=criketer;
+// const{country}=criketer;
+// console.log(name);
+// console.log(best_score);
+// console.log(country);
+
+    </script>
+</body>
+</html>
